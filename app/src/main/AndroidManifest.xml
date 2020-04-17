@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoadImageTestActivity"></activity>
+        <activity android:name=".ThreadTestActivity"></activity>
+        <activity android:name=".LoadImageTestActivity" />
         <activity android:name=".RecyclerViewTestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

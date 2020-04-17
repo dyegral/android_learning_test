@@ -3,7 +3,8 @@
     <string name="click">点击</string>
     <string name="test_sharePreference">测试 SharedPreference</string>
     <string name="http_test">测试 http 网络请求</string>
-    <string name="recyclerview_horizontal_test">测试 水平方向 RecyclerView</string>
-    <string name="recyclerview_vertical_test">测试 垂直方向 RecyclerView</string>
+    <string name="recycler_view_horizontal_test">测试 水平方向 RecyclerView</string>
+    <string name="recycler_view_vertical_test">测试 垂直方向 RecyclerView</string>
     <string name="glide_load_img_test">Glide 加载图片测试</string>
+    <string name="thread_test">测试子线程更新UI</string>
 </resources>

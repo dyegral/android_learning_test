@@ -23,12 +23,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         Button btn_rv_horizontal = findViewById(R.id.btn_recycler_view);
         Button btn_rv_vertical = findViewById(R.id.btn_recycler_view2);
         Button btn_load_img = findViewById(R.id.btn_load_img);
+        Button btn_thread = findViewById(R.id.btn_thread);
 
         btn_share_preference.setOnClickListener(this);
         btn_http.setOnClickListener(this);
         btn_rv_horizontal.setOnClickListener(this);
         btn_rv_vertical.setOnClickListener(this);
         btn_load_img.setOnClickListener(this);
+        btn_thread.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +64,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.btn_load_img:
             {
                 Intent intent = new Intent(MainActivity.this, LoadImageTestActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_thread:
+            {
+                Intent intent = new Intent(MainActivity.this, ThreadTestActivity.class);
                 startActivity(intent);
             }
             break;
