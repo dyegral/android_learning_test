@@ -7,4 +7,5 @@
     <string name="recycler_view_vertical_test">测试 垂直方向 RecyclerView</string>
     <string name="glide_load_img_test">Glide 加载图片测试</string>
     <string name="thread_test">测试子线程更新UI</string>
+    <string name="service_test">测试 Service</string>
 </resources>

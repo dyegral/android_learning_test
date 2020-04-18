@@ -1,14 +1,9 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -24,6 +19,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         Button btn_rv_vertical = findViewById(R.id.btn_recycler_view2);
         Button btn_load_img = findViewById(R.id.btn_load_img);
         Button btn_thread = findViewById(R.id.btn_thread);
+        Button btn_service = findViewById(R.id.btn_service);
 
         btn_share_preference.setOnClickListener(this);
         btn_http.setOnClickListener(this);
@@ -31,45 +27,45 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btn_rv_vertical.setOnClickListener(this);
         btn_load_img.setOnClickListener(this);
         btn_thread.setOnClickListener(this);
+        btn_service.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_share_preference:
-            {
+            case R.id.btn_share_preference: {
                 Intent intent = new Intent(MainActivity.this, SharePreferenceTestActivity.class);
                 startActivity(intent);
             }
             break;
-            case R.id.btn_http:
-            {
+            case R.id.btn_http: {
                 // 添加代码块 可以让变量名 intent 重复使用
                 Intent intent = new Intent(MainActivity.this, HttpRequestTestActivity.class);
                 startActivity(intent);
             }
             break;
-            case R.id.btn_recycler_view:
-            {
+            case R.id.btn_recycler_view: {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewTestActivity.class);
                 startActivity(intent);
             }
             break;
-            case R.id.btn_recycler_view2:
-            {
+            case R.id.btn_recycler_view2: {
                 Intent intent = new Intent(MainActivity.this, RecyclerView2TestActivity.class);
                 startActivity(intent);
             }
             break;
-            case R.id.btn_load_img:
-            {
+            case R.id.btn_load_img: {
                 Intent intent = new Intent(MainActivity.this, LoadImageTestActivity.class);
                 startActivity(intent);
             }
             break;
-            case R.id.btn_thread:
-            {
+            case R.id.btn_thread: {
                 Intent intent = new Intent(MainActivity.this, ThreadTestActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_service: {
+                Intent intent = new Intent(MainActivity.this, ServiceTestActivity.class);
                 startActivity(intent);
             }
             break;

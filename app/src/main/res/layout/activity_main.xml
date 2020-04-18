@@ -69,5 +69,16 @@
         app:layout_constraintStart_toStartOf="@+id/btn_load_img"
         app:layout_constraintTop_toBottomOf="@+id/btn_load_img" />
 
+    <Button
+        android:id="@+id/btn_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/service_test"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thread"
+        app:layout_constraintStart_toStartOf="@+id/btn_thread"
+        app:layout_constraintTop_toBottomOf="@+id/btn_thread" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

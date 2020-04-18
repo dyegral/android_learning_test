@@ -14,7 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ThreadTestActivity"></activity>
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".ServiceTestActivity" />
+        <activity android:name=".ThreadTestActivity" />
         <activity android:name=".LoadImageTestActivity" />
         <activity android:name=".RecyclerViewTestActivity" />
         <activity android:name=".MainActivity">
