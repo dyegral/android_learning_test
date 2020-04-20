@@ -80,5 +80,16 @@
         app:layout_constraintStart_toStartOf="@+id/btn_thread"
         app:layout_constraintTop_toBottomOf="@+id/btn_thread" />
 
+    <Button
+        android:id="@+id/btn_lite_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/litepal_test"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_service"
+        app:layout_constraintStart_toStartOf="@+id/btn_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_service" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

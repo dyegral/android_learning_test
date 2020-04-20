@@ -8,4 +8,6 @@
     <string name="glide_load_img_test">Glide 加载图片测试</string>
     <string name="thread_test">测试子线程更新UI</string>
     <string name="service_test">测试 Service</string>
+    <string name="litepal_test">测试 LitePal</string>
+    <string name="create_db">创建数据库</string>
 </resources>

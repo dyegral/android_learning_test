@@ -20,6 +20,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         Button btn_load_img = findViewById(R.id.btn_load_img);
         Button btn_thread = findViewById(R.id.btn_thread);
         Button btn_service = findViewById(R.id.btn_service);
+        Button btn_lite_pal = findViewById(R.id.btn_lite_pal);
 
         btn_share_preference.setOnClickListener(this);
         btn_http.setOnClickListener(this);
@@ -28,6 +29,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btn_load_img.setOnClickListener(this);
         btn_thread.setOnClickListener(this);
         btn_service.setOnClickListener(this);
+        btn_lite_pal.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +68,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             break;
             case R.id.btn_service: {
                 Intent intent = new Intent(MainActivity.this, ServiceTestActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_lite_pal: {
+                Intent intent = new Intent(MainActivity.this, LitePalTestActivity.class);
                 startActivity(intent);
             }
             break;
